@@ -1,24 +1,24 @@
 import { LandingPageConfig } from './types';
-import logoAsset from './assets/images/recipe_app_logo.webp';
+import logoAsset from './assets/images/recipe_app_logo_1785526104929.jpg';
 
 // Screenshots oficiais do aplicativo salvos exatamente das imagens enviadas
-import appRealInicio from './assets/images/app-01-inicio.webp';
-import appRealGeladeira from './assets/images/app-02-geladeira.webp';
-import appRealPopulares from './assets/images/app03populares.webp';
-import appRealCategorias from './assets/images/app-04-categorias.webp';
-import appRealBrownie from './assets/images/app-05-brownie.webp';
-import appRealSuco from './assets/images/app-06-suco.webp';
-import appRealCatalogo from './assets/images/app-08-catalogo.webp';
+import appRealInicio from './assets/images/app-01-inicio.png';
+import appRealGeladeira from './assets/images/app-02-geladeira.png';
+import appRealPopulares from './assets/images/app03populares.png';
+import appRealCategorias from './assets/images/app-04-categorias.png';
+import appRealBrownie from './assets/images/app-05-brownie.png';
+import appRealSuco from './assets/images/app-06-suco.png';
+import appRealCatalogo from './assets/images/app-08-catalogo.png';
 
 // Imagens oficiais dos prints do WhatsApp
-import proofJuliana from './assets/images/juliana.webp';
-import proofHelena from './assets/images/helena.webp';
-import proofRicardo from './assets/images/ricardo.webp';
-import proofCamila from './assets/images/camila.webp';
-import proofClaudete from './assets/images/claudete.webp';
-import proofMarcia from './assets/images/marcia.webp';
-import proofLenir from './assets/images/lenir.webp';
-import proofRafael from './assets/images/rafael.webp';
+import proofJuliana from './assets/images/juliana.png';
+import proofHelena from './assets/images/helena.jpeg';
+import proofRicardo from './assets/images/ricardo.png';
+import proofCamila from './assets/images/camila.png';
+import proofClaudete from './assets/images/claudete.jpeg';
+import proofMarcia from './assets/images/marcia.png';
+import proofLenir from './assets/images/lenir.png';
+import proofRafael from './assets/images/rafael.png';
 
 export const INITIAL_CONFIG: LandingPageConfig = {
   appName: 'Meu Caderno de Receitas',
