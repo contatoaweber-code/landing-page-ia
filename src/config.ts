@@ -33,9 +33,9 @@ export const INITIAL_CONFIG: LandingPageConfig = {
   ctaText: 'QUERO ACESSAR AGORA',
   
   // SEU LINK DE CHECKOUT (Kiwify, Hotmart, Eduzz, Monetizze, PerfectPay, etc)
-  checkoutUrl: 'https://pay.kiwify.com.br/exemplo-caderno-receitas',
+  checkoutUrl: 'https://pay.wiapy.com/vvAs2yb1zDPn',
   
-  whatsappSupportNumber: '5511999999999',
+  whatsappSupportNumber: '55996485045',
   
   pricing: {
     originalPrice: 'R$ 97,00',
