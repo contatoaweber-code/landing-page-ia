@@ -1,13 +1,12 @@
 import React from 'react';
-import { BookOpen, ShieldCheck, Sparkles } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 import { LandingPageConfig } from '../types';
 
 interface FooterProps {
   config: LandingPageConfig;
-  onOpenSettings?: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ config, onOpenSettings }) => {
+export const Footer: React.FC<FooterProps> = ({ config }) => {
   return (
     <footer className="bg-stone-900 text-stone-400 py-12 border-t border-stone-800 text-xs">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

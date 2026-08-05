@@ -133,6 +133,8 @@ export const AppScreensCarousel: React.FC<AppScreensCarouselProps> = ({
                   <img
                     src={screen.imageUrl}
                     alt={screen.title}
+                    width={355}
+                    height={631}
                     loading={idx === 0 ? "eager" : "lazy"}
                     {...(idx === 0 ? ({ fetchPriority: "high" } as any) : {})}
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-105"

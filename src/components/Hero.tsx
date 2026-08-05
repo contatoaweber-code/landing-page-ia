@@ -25,6 +25,10 @@ export const Hero: React.FC<HeroProps> = ({ config }) => {
                 <img
                   src={config.logoUrl}
                   alt={config.appName}
+                  width={48}
+                  height={48}
+                  loading="eager"
+                  fetchPriority="high"
                   className="w-full h-full object-cover rounded-xl"
                   referrerPolicy="no-referrer"
                 />
@@ -102,6 +106,10 @@ export const Hero: React.FC<HeroProps> = ({ config }) => {
                     <img
                       src={config.appScreenshots[0]?.imageUrl}
                       alt={`Interface de ${config.appName}`}
+                      width={355}
+                      height={666}
+                      loading="eager"
+                      fetchPriority="high"
                       className="w-full h-full object-cover object-top"
                       referrerPolicy="no-referrer"
                     />

@@ -154,7 +154,9 @@ export const SocialProofCarousel: React.FC<SocialProofCarouselProps> = ({
                     <img
                       src={item.screenshotUrl}
                       alt={`Print original da conversa do WhatsApp de ${item.authorName}`}
-                      loading={idx === 0 ? "eager" : "lazy"}
+                      width={355}
+                      height={631}
+                      loading="lazy"
                       className="w-full h-full object-contain bg-stone-950 group-hover/img:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />

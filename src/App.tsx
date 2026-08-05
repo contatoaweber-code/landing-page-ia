@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { INITIAL_CONFIG } from './config';
-import { LandingPageConfig } from './types';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { AppScreensCarousel } from './components/AppScreensCarousel';
@@ -12,10 +11,9 @@ import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
 import { ImageLightboxModal } from './components/ImageLightboxModal';
 import { StickyMobileCta } from './components/StickyMobileCta';
-import { ConfigDrawerModal } from './components/ConfigDrawerModal';
 
 export default function App() {
-  const [config, setConfig] = useState<LandingPageConfig>(INITIAL_CONFIG);
+  const [config] = useState(INITIAL_CONFIG);
 
   // Unified countdown timer (14m 33s)
   const [timeLeft, setTimeLeft] = useState(14 * 60 + 33);
@@ -38,9 +36,6 @@ export default function App() {
     imageUrl: null,
   });
 
-  // Settings drawer state
-  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-
   const handleOpenLightbox = (imageUrl: string, title?: string, subtitle?: string) => {
     setLightboxState({
       isOpen: true,
@@ -54,17 +49,10 @@ export default function App() {
     setLightboxState((prev) => ({ ...prev, isOpen: false }));
   };
 
-  const handleUpdateConfig = (newConfigPartial: Partial<LandingPageConfig>) => {
-    setConfig((prev) => ({
-      ...prev,
-      ...newConfigPartial,
-    }));
-  };
-
   return (
     <div className="min-h-screen bg-stone-50 text-stone-900 font-sans antialiased selection:bg-[#4E6028] selection:text-white">
       {/* 1. Header Navigation Bar */}
-      <Header config={config} timeLeft={timeLeft} onOpenSettings={() => setIsSettingsOpen(true)} />
+      <Header config={config} timeLeft={timeLeft} />
 
       {/* 2. HERO Section (Primeira Dobra + Faixa de Confiança) */}
       <Hero config={config} />
@@ -97,7 +85,7 @@ export default function App() {
       />
 
       {/* 10. Footer */}
-      <Footer config={config} onOpenSettings={() => setIsSettingsOpen(true)} />
+      <Footer config={config} />
 
       {/* 11. Sticky CTA for Mobile (Meta Ads optimized) */}
       <StickyMobileCta
@@ -114,14 +102,6 @@ export default function App() {
         title={lightboxState.title}
         subtitle={lightboxState.subtitle}
         onClose={handleCloseLightbox}
-      />
-
-      {/* 13. Landing Page Settings / Quick Test Modal */}
-      <ConfigDrawerModal
-        isOpen={isSettingsOpen}
-        config={config}
-        onClose={() => setIsSettingsOpen(false)}
-        onUpdateConfig={handleUpdateConfig}
       />
     </div>
   );

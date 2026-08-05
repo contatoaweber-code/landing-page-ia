@@ -1,14 +1,13 @@
 import React from 'react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { LandingPageConfig } from '../types';
 
 interface HeaderProps {
   config: LandingPageConfig;
   timeLeft?: number;
-  onOpenSettings?: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ config, timeLeft = 14 * 60 + 33, onOpenSettings }) => {
+export const Header: React.FC<HeaderProps> = ({ config, timeLeft = 14 * 60 + 33 }) => {
   const minutes = Math.floor(timeLeft / 60);
   const seconds = timeLeft % 60;
   const formattedTime = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
@@ -31,17 +30,6 @@ export const Header: React.FC<HeaderProps> = ({ config, timeLeft = 14 * 60 + 33,
             </span>
           </div>
         </div>
-
-        {/* Admin settings trigger */}
-        {onOpenSettings && (
-          <button
-            onClick={onOpenSettings}
-            className="absolute right-0 p-1.5 rounded-lg text-stone-400 hover:text-stone-700 transition-colors"
-            title="Configurações"
-          >
-            <Sparkles className="w-4 h-4" />
-          </button>
-        )}
       </div>
     </header>
   );
