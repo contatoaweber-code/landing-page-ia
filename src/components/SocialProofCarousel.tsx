@@ -158,7 +158,6 @@ export const SocialProofCarousel: React.FC<SocialProofCarouselProps> = ({
                       height={631}
                       loading="lazy"
                       className="w-full h-full object-contain bg-stone-950 group-hover/img:scale-105 transition-transform duration-500"
-                      referrerPolicy="no-referrer"
                     />
 
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex flex-col items-center justify-center text-white gap-2 p-3 text-center z-20">

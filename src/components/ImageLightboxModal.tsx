@@ -48,7 +48,6 @@ export const ImageLightboxModal: React.FC<ImageLightboxModalProps> = ({
             src={imageUrl}
             alt={title || 'Print do aplicativo'}
             className="max-h-[75vh] w-auto object-contain rounded-xl shadow-lg border border-white/5"
-            referrerPolicy="no-referrer"
           />
         </div>
 

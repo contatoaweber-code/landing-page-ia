@@ -30,7 +30,6 @@ export const Hero: React.FC<HeroProps> = ({ config }) => {
                   loading="eager"
                   fetchPriority="high"
                   className="w-full h-full object-cover rounded-xl"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="text-left">
@@ -111,7 +110,6 @@ export const Hero: React.FC<HeroProps> = ({ config }) => {
                       loading="eager"
                       fetchPriority="high"
                       className="w-full h-full object-cover object-top"
-                      referrerPolicy="no-referrer"
                     />
                   </div>
                 </div>

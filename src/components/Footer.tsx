@@ -21,7 +21,6 @@ export const Footer: React.FC<FooterProps> = ({ config }) => {
                   src={config.logoUrl}
                   alt={config.appName}
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
                 />
               ) : (
                 <BookOpen className="w-5 h-5 text-white" />
