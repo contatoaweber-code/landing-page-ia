@@ -33,7 +33,7 @@ export const INITIAL_CONFIG: LandingPageConfig = {
   ctaText: 'QUERO ACESSAR AGORA',
   
   // SEU LINK DE CHECKOUT (Kiwify, Hotmart, Eduzz, Monetizze, PerfectPay, etc)
-  checkoutUrl: 'https://pay.wiapy.com/page/xLGgojXQ17C',
+  checkoutUrl: 'https://pay.wiapy.com/vvAs2yb1zDPn',
   
   whatsappSupportNumber: '55996485045',
   
@@ -42,7 +42,7 @@ export const INITIAL_CONFIG: LandingPageConfig = {
     currentPrice: 'R$ 29,90',
     installmentText: 'ou 3x de R$ 10,50 no cartão',
     savingsText: 'Economia imediata de R$ 67,10',
-    checkoutUrl: 'https://pay.wiapy.com/page/xLGgojXQ17C',
+    checkoutUrl: 'https://pay.wiapy.com/vvAs2yb1zDPn',
     guaranteeDays: 7,
   },
 
