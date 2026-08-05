@@ -1,0 +1,6 @@
+{
+  "name": "Meu Caderno de Receitas",
+  "description": "Landing page de alta conversão para o aplicativo Meu Caderno de Receitas",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
