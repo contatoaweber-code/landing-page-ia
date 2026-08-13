@@ -73,7 +73,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ faqItems, whatsappSuppor
         {whatsappSupportNumber && (
           <div className="mt-8 bg-[#F3F6EC] rounded-2xl p-4 sm:p-5 border border-[#4E6028]/20 text-center flex flex-col sm:flex-row items-center justify-between gap-3">
             <div className="text-left">
-              <h4 className="font-extrabold text-stone-900 text-sm font-heading">Ainda tem alguma dúvida?</h4>
+              <h3 className="font-extrabold text-stone-900 text-sm font-heading">Ainda tem alguma dúvida?</h3>
               <p className="text-stone-600 text-xs mt-0.5 font-sans">
                 Nossa equipe de suporte responde rápido no WhatsApp.
               </p>
