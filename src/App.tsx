@@ -54,35 +54,37 @@ export default function App() {
       {/* 1. Header Navigation Bar */}
       <Header config={config} timeLeft={timeLeft} />
 
-      {/* 2. HERO Section (Primeira Dobra + Faixa de Confiança) */}
-      <Hero config={config} />
+      <main>
+        {/* 2. HERO Section (Primeira Dobra + Faixa de Confiança) */}
+        <Hero config={config} />
 
-      {/* 3. Provas Sociais (Carrossel de Prints do WhatsApp) */}
-      <SocialProofCarousel
-        proofs={config.whatsappProofs}
-        onOpenLightbox={handleOpenLightbox}
-      />
+        {/* 3. Provas Sociais (Carrossel de Prints do WhatsApp) */}
+        <SocialProofCarousel
+          proofs={config.whatsappProofs}
+          onOpenLightbox={handleOpenLightbox}
+        />
 
-      {/* 4. Prints do Aplicativo */}
-      <AppScreensCarousel
-        screenshots={config.appScreenshots}
-        onOpenLightbox={handleOpenLightbox}
-      />
+        {/* 4. Prints do Aplicativo */}
+        <AppScreensCarousel
+          screenshots={config.appScreenshots}
+          onOpenLightbox={handleOpenLightbox}
+        />
 
-      {/* 5. Benefícios do Aplicativo */}
-      <BenefitsSection benefits={config.benefits} />
+        {/* 5. Benefícios do Aplicativo */}
+        <BenefitsSection benefits={config.benefits} />
 
-      {/* 7. Como Funciona */}
-      <HowItWorksSection />
+        {/* 7. Como Funciona */}
+        <HowItWorksSection />
 
-      {/* 8. Oferta (Card Premium + Preço + Garantia de 7 dias) */}
-      <OfferSection config={config} timeLeft={timeLeft} />
+        {/* 8. Oferta (Card Premium + Preço + Garantia de 7 dias) */}
+        <OfferSection config={config} timeLeft={timeLeft} />
 
-      {/* 9. FAQ (Perguntas Frequentes) */}
-      <FaqSection
-        faqItems={config.faqItems}
-        whatsappSupportNumber={config.whatsappSupportNumber}
-      />
+        {/* 9. FAQ (Perguntas Frequentes) */}
+        <FaqSection
+          faqItems={config.faqItems}
+          whatsappSupportNumber={config.whatsappSupportNumber}
+        />
+      </main>
 
       {/* 10. Footer */}
       <Footer config={config} />

@@ -155,6 +155,8 @@ export const SocialProofCarousel: React.FC<SocialProofCarouselProps> = ({
                       src={item.screenshotUrl}
                       alt={`Print original da conversa do WhatsApp de ${item.authorName}`}
                       className="w-full h-full object-contain bg-stone-950 group-hover/img:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      decoding="async"
                     />
 
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex flex-col items-center justify-center text-white gap-2 p-3 text-center z-20">
@@ -198,13 +200,17 @@ export const SocialProofCarousel: React.FC<SocialProofCarouselProps> = ({
                 setCurrentIndex(idx);
                 scrollToIndex(idx);
               }}
-              className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
-                idx === currentIndex
-                  ? 'w-8 bg-emerald-400'
-                  : 'w-2.5 bg-stone-700 hover:bg-stone-600'
-              }`}
+              className="flex items-center justify-center p-[9px] -m-[9px] cursor-pointer"
               aria-label={`Ver depoimento ${idx + 1}`}
-            />
+            >
+              <span
+                className={`block h-2.5 rounded-full transition-all duration-300 ${
+                  idx === currentIndex
+                    ? 'w-8 bg-emerald-400'
+                    : 'w-2.5 bg-stone-700 hover:bg-stone-600'
+                }`}
+              />
+            </button>
           ))}
         </div>
 

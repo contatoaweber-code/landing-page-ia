@@ -134,6 +134,8 @@ export const AppScreensCarousel: React.FC<AppScreensCarouselProps> = ({
                     src={screen.imageUrl}
                     alt={screen.title}
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-105"
+                    loading="lazy"
+                    decoding="async"
                   />
 
                   {/* Top Badge */}
@@ -192,13 +194,17 @@ export const AppScreensCarousel: React.FC<AppScreensCarouselProps> = ({
                 setCurrentIndex(idx);
                 scrollToIndex(idx);
               }}
-              className={`h-2.5 rounded-full transition-all duration-300 ${
-                idx === currentIndex
-                  ? 'w-8 bg-[#4E6028]'
-                  : 'w-2.5 bg-stone-300 hover:bg-stone-400'
-              }`}
+              className="flex items-center justify-center p-[9px] -m-[9px]"
               aria-label={`Ir para o slide ${idx + 1}`}
-            />
+            >
+              <span
+                className={`block h-2.5 rounded-full transition-all duration-300 ${
+                  idx === currentIndex
+                    ? 'w-8 bg-[#4E6028]'
+                    : 'w-2.5 bg-stone-300 hover:bg-stone-400'
+                }`}
+              />
+            </button>
           ))}
         </div>
 

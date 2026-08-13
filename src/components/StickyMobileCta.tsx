@@ -36,7 +36,7 @@ export const StickyMobileCta: React.FC<StickyMobileCtaProps> = ({ price, origina
           </span>
           <div className="flex items-baseline gap-1">
             {originalPrice && (
-              <span className="text-[11px] text-stone-400 line-through font-semibold whitespace-nowrap">
+              <span className="text-[11px] text-stone-500 line-through font-semibold whitespace-nowrap">
                 {originalPrice}
               </span>
             )}

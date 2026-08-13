@@ -21,6 +21,8 @@ export const Footer: React.FC<FooterProps> = ({ config }) => {
                   src={config.logoUrl}
                   alt={config.appName}
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               ) : (
                 <BookOpen className="w-5 h-5 text-white" />
@@ -45,14 +47,14 @@ export const Footer: React.FC<FooterProps> = ({ config }) => {
         </div>
 
         {/* Legal Disclaimer for Meta Ads compliance */}
-        <div className="pt-8 text-center text-stone-500 max-w-3xl mx-auto space-y-3 leading-relaxed text-[11px]">
+        <div className="pt-8 text-center text-stone-400 max-w-3xl mx-auto space-y-3 leading-relaxed text-[11px]">
           <p>
             © {new Date().getFullYear()} {config.appName}. Todos os direitos reservados.
           </p>
           <p>
             Este site não faz parte do site do Facebook ou da Meta Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma maneira. FACEBOOK é uma marca comercial da META, Inc.
           </p>
-          <p className="text-stone-600">
+          <p className="text-stone-400">
             Os resultados exibidos neste site podem variar de acordo com o empenho individual na execução das receitas.
           </p>
         </div>

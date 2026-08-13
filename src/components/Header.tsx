@@ -25,7 +25,7 @@ export const Header: React.FC<HeaderProps> = ({ config, timeLeft = 14 * 60 + 33 
           {/* Text & Timer */}
           <div className="text-xs sm:text-sm font-bold text-stone-800 flex items-center gap-1.5 whitespace-nowrap font-heading tracking-tight">
             <span>Desconto de 70% expira em:</span>
-            <span className="text-[#F59E0B] font-extrabold tracking-wider font-mono text-sm sm:text-base">
+            <span className="text-amber-700 font-extrabold tracking-wider font-mono text-sm sm:text-base">
               {formattedTime}
             </span>
           </div>

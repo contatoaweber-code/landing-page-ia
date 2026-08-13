@@ -102,6 +102,8 @@ export const Hero: React.FC<HeroProps> = ({ config }) => {
                       src={config.appScreenshots[0]?.imageUrl}
                       alt={`Interface de ${config.appName}`}
                       className="w-full h-full object-cover object-top"
+                      loading="eager"
+                      fetchPriority="high"
                     />
                   </div>
                 </div>

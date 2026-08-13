@@ -39,7 +39,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ config, timeLeft = 1
           <Clock className="w-4 h-4 text-amber-700 animate-spin" />
           <p className="text-xs sm:text-sm font-extrabold text-amber-900 font-heading">
             Desconto de 70% expira em:{' '}
-            <span className="text-orange-600 font-mono text-sm sm:text-base ml-1">
+            <span className="text-orange-700 font-mono text-sm sm:text-base ml-1">
               {formattedTime}
             </span>
           </p>
@@ -99,7 +99,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ config, timeLeft = 1
                 </span>
 
                 <div className="flex items-center justify-center gap-2 mb-1">
-                  <span className="text-stone-400 line-through text-xs font-semibold">
+                  <span className="text-stone-500 line-through text-xs font-semibold">
                     De {config.pricing.originalPrice}
                   </span>
                   <span className="text-[10px] font-extrabold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-heading">
@@ -126,7 +126,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ config, timeLeft = 1
                       <path d="M112.5 399.5L256 256L399.5 399.5L256 496L112.5 399.5Z" fill="#32BCAD"/>
                     </svg>
                     <span>Pix</span>
-                    <span className="text-stone-300">•</span>
+                    <span className="text-stone-500">•</span>
                     {/* Visa */}
                     <span className="text-[9px] font-black italic tracking-tighter text-[#1A1F71] bg-stone-100 px-1 py-0.2 rounded border border-stone-200/60">
                       VISA
